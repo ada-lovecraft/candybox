@@ -36,7 +36,7 @@ if (!$candyHelper.exists()) {
 	.appendTo('body');
 	$candyHelper = $('#candyHelper');	
 	
-	$candyHelper.load('http://localhost:3000/layout/helperLayout.html', function() {
+	$candyHelper.load('http://static.codevinsky.com/candybox//helperLayout.html', function() {
 		setupHelper();
 		$candyHelper.fadeIn();
 	});
