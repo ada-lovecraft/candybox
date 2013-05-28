@@ -73,7 +73,12 @@ function setupHelper() {
 }
 
 function makePotions() {
-
+	$candies = $('#cauldron_candies_quantity');
+	$lollipops = $('#cauldron_lollipops_quantity');
+	$mix = $('#cauldron_mix');
+	$boil = $('#cauldron_boil');
+	$stop = $('#cauldron_stop');
+	$bottle = $('#cauldron_put_into_bottles');
 	if (continuePotions) {
 		if ($healthPots.val() > 0) {
 			makeHealthPotion();
@@ -101,6 +106,7 @@ function makeHealthPotion() {
 }
 
 function makeInvulnPotion() {
+	makingPotions = true;
 	$candies.val(2000);
 	cauldron.putInTheCauldron();
 	$mix.click();
